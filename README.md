@@ -2,7 +2,7 @@
 
 Barebones modal dialogs.
 
-![Alt text](http://i.imgur.com/c6yS4Td.png)
+**Demo:** [http://jsbin.com/UlusaXI/2](http://jsbin.com/UlusaXI/2)
 
 ## How to
 
