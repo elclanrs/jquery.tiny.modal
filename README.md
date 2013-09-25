@@ -13,6 +13,12 @@ Create a container with an ID for your modal dialog, then put any markup you wan
 </div>
 ```
 
+Make sure to hide the modal in your CSS:
+
+```css
+#mymodal { display: none }
+```
+
 Trigger your modal on some element, like a button for example and call the plugin:
 
 ```javascript
