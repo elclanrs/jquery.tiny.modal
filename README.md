@@ -24,7 +24,7 @@ $('button').click(function(){
 });
 ```
 
-Tiny Modal comes with a basic theme that you can configure in 'styl/jquery.tinymodal.styl'. Make sure to run `npm install` to download the dependencies. After editing don't forget to watch your files for changes and compile with `sh compile.sh`.
+Tiny Modal comes with a basic theme that you can configure in `styl/jquery.tinymodal.styl`. Make sure to run `npm install` to download the dependencies. After editing don't forget to watch your files for changes and compile with `sh compile.sh`.
 
 ## Options
 
