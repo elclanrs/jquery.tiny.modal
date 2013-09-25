@@ -2,6 +2,8 @@
 
 Barebones modal dialogs.
 
+![Alt text](http://i.imgur.com/c6yS4Td.png)
+
 ## How to
 
 Create a container with an ID for your modal dialog, then put any markup you want inside.
