@@ -11,6 +11,7 @@
     html: '<p>Alert</p>',
     Ok: $.noop,
     Cancel: $.noop,
+    onOpen: $.noop,
     onClose: $.noop,
     clickOutside: true
   };
@@ -31,7 +32,9 @@
 
     function show() {
       $('body').width($('body').width()).css('overflow', 'hidden');
-      $overlay.fadeIn('fast', function() { $modal.fadeIn('fast'); });
+      $overlay.fadeIn('fast', function() {
+        $modal.fadeIn('fast', o.onOpen);
+      });
       $modal.css({
         marginLeft: -($modal.width()/2) +'px'
       });
