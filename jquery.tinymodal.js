@@ -21,9 +21,11 @@
         $overlay = $('<div class="tinymodal-overlay">').hide(),
         $modal = $('<div class="tinymodal-window">\
           <div class="tinymodal-title">'+ o.title +'<div class="tinymodal-close">&#215;</div></div>\
-          <div class="tinymodal-content">'+ $(o.html).html() +'</div>\
+          <div class="tinymodal-content"></div>\
           <div class="tinymodal-buttons"><div class="inner"><button>'+ o.buttons.join('</button><button>') +'</button></div></div>\
           </div>').hide();
+
+    $modal.find('.tinymodal-content').append($(o.html).children());
 
     function show() {
       $('body').width($('body').width()).css('overflow', 'hidden');
