@@ -36,7 +36,8 @@
         $modal.fadeIn('fast', o.onOpen);
       });
       $modal.css({
-        marginLeft: -($modal.width()/2) +'px'
+        marginLeft: -($modal.width()/2) +'px',
+        marginTop: -($modal.height()/1.5) +'px'
       });
     }
 
