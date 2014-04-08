@@ -1,4 +1,4 @@
-/**!
+/*!
  * jQuery Tiny Modal
  * @author: Cedric Ruiz
  * https://github.com/elclanrs/jquery.tiny.modal
@@ -23,12 +23,16 @@
         $modal = $('<div class="tinymodal-window">\
           <div class="tinymodal-title">'+ o.title +'<div class="tinymodal-close">&#215;</div></div>\
           <div class="tinymodal-content"></div>\
-          <div class="tinymodal-buttons"><div class="inner"><button>'+ o.buttons.join('</button><button>') +'</button></div></div>\
+          <div class="tinymodal-buttons"><div class="inner"></div></div>\
           </div>').hide(),
         $el = $(o.html)
         $children = $el.children();
 
     $modal.find('.tinymodal-content').append($children);
+    
+    if (o.buttons.length) {
+      $modal.find('.inner').append('<button>'+ o.buttons.join('</button><button>') +'</button>');
+    }
 
     function show() {
       $('body').width($('body').width()).css('overflow', 'hidden');
