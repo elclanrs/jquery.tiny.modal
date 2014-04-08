@@ -41,7 +41,6 @@
       });
       $modal.css({
         marginLeft: -($modal.width()/2) +'px',
-        marginTop: -($modal.height()/1.5) +'px'
       });
     }
 
